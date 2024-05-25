@@ -1,0 +1,204 @@
+\documentclass{article}
+
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{longtable}
+
+\setlength{\headheight}{23pt}
+\pagestyle{fancyplain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex}
+
+\lhead{Alexander Lee \\ CS 61, Summer 2024}
+\chead{}
+\rhead{Homework 1 \\ Page \thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\begin{document}
+
+\section*{Part I}
+
+\begin{enumerate}[1.]
+    \item
+    \begin{enumerate}[label=(Section \arabic*), leftmargin=*]
+        \item I enjoyed reading about the potential of Mathematics to provide joy even through all of the struggles. Although I have not been able to solve exercise 1.1, I hope to solve it eventually.
+        \item I learned to always write in complete sentences in Math, and that you should not use pronouns like "it" or "that's" but rather you should describe everything thoroughly in terms of what you are examining (i.e. specific variables).
+        \item I learned that we must build on our definitions and assumptions in Mathematics, starting from integers, even and odd, and prime and composite, along with relations and properties. I enjoyed learning about divisors, which provides a definition that we can continue to use to provide further definitions and to prove future theorems.
+        \item I learned that in Mathematics, true must always be absolute, unconditional, and without exception. I enjoyed learning about vacuous truths, which may not initially intuitively seem to be true, but due to the nature of the statement must be true.
+    \end{enumerate}
+    \item I used the following link to learn how to use enumitem to create custom enumerations:\\
+          \href {https://tex.stackexchange.com/questions/600622/custom-enumerate-environment}{tex.stackexchange.com}\\
+          I also used the following link to verify how to write double negation elimination rules:\\
+          \href {https://en.wikipedia.org/wiki/Double_negation}{Wikipedia: Double negation}
+\end{enumerate}
+
+\section*{Part II}
+
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+ & M & T & W & Th & F & Sa & Su \\
+\hline
+Lion & F & F & F & T & T & T & T \\
+\hline
+Unicorn & T & T & T & F & F & F & F \\
+
+\end{tabular}
+\end{center}
+\begin{enumerate}[1.]
+    \item 
+        $a$ = Today is a truth day for Lion. \\
+        $b$ = Yesterday was a lying day for Lion. \\
+        $c$ = Today is a truth day for Unicorn. \\
+        $d$ = Yesterday was a lying day for Unicorn. \\
+        \\
+        If $a$, then $b$ when today is Thursday. \\
+        If (not $a$), then $b$ or (not $b$) when today is Monday, Tuesday, or Wednesday. \\
+        \\
+        If $c$, then $d$ when today is Sunday. \\
+        If (not $c$), then $d$ when today is Thursday, Friday, Saturday. \\
+        \\
+        So, if a or (not $a$) and $b$ or (not $b$), then the day is Thursday.
+    \item
+        $a$ = Yesterday was a lying day for Lion. \\
+        $b$ = 2 days from tomorrow will be a lying day for Lion. \\
+        $c$ = Today is a truth day for Lion. \\ 
+        $d$ = Today is a lying day for Lion. \\
+        \\
+        If $c$, then $a$ and $b$, and no days are possible. \\
+        If $d$, then not ($a$ or $b$) and: \\
+        % TODO: indent following text
+            a and b is not possible. \\
+            a and (not b) when today is Tuesday or Wednesday. \\
+            (not a) and b is not possible. \\
+            (not a) and (not b) is not possible. \\
+        \\
+        So, the only possible days are T and W.
+    \item 
+        a = Yesterday was a lying day for Lion. \\
+        b = Tomorrow was a lying day for Lion. \\
+        c = Today is a truth day for Lion. \\
+        d = Today is a lying day for Lion. \\
+        \\
+        If c, then a and b, and no days are possible. \\
+        If d, then not(a or b) and: \\
+        a and b is not possible. \\
+        a and (not b) when today is Wednesday. \\
+        (not a) and b when today is Monday. \\
+        (not a) and (not b) when today is Tuesday. \\
+        So the possible days are Monday, Tuesday, or Wednesday.
+    \item
+    a = The Lion lied yesterday and will lie again tomorrow. \\
+    b = Today is a truth day for Lion. \\
+    c = Today is a lie day for Lion. \\
+    \\
+    If b, then a and no days are possible. \\
+    If c, then not a, and no days are possible. \\
+    So, there are no days where the statement can be true.
+\end{enumerate}
+
+\section*{Part III}
+\begin{enumerate}[label=(3.\arabic*),start=1]
+    \item
+        \begin{enumerate}[(a)]
+            \item If $3\mid100$, there exists an integer c such that $3c=100$. There is no such integer, thus $3\nmid100$ and 100 is not divisble 3.
+            \item If $3\mid99$, there exists an integer c such that $3c=99$. There is such an integer, $c=33$, so we say $3\mid99$ or 3 is a divisor of 99.
+            \item If $-3\mid3$, there exists an integer c such that $-3c=3$. There is such an integer, $c=-1$, so we say $-3\mid3$ or -3 is a divisor of 3.
+            \item If $-5\mid-5$, there exists an integer c such that $-5c=-5$. There is such an integer, $c=1$, so we say that $-5\mid-5$ or -5 is a divisor -5.
+            \item If $-2\mid-7$, there exists an integer c such that $-2c=-7$. There are no such integers, so we say $-2\mid-7$ or -2 is not a divisor of -7.
+            \item If $0\mid4$, there exists an integer c such that $0c=4$. There are no such integers, so we say that $0\nmid4$ or 0 is not a divisor of 4.
+            \item If $4\mid0$, there exists an integer c such that $4c=0$. There is such an integer, $c=0$, so we say that $4\mid0$ or 4 is a divisor of 0.
+            \item If $0\mid0$, there exists an integer c such that $0c=0$. There is such an integer, $c=0$, so we say that $0\mid0$ or 0 is a divisor of 0.
+        \end{enumerate}
+    \addtocounter{enumi}{1}
+    \item
+        \begin{enumerate}[(a)]
+            \item 21 is not a prime number because it has a divisor other than 1 and itself, namely $3\mid21$ and $7\mid21$.\\
+                  21 is a composite because there exists such an integer x such that $1<x<21$ and $x\mid21$, namely $x=3$ and $x=7$.
+            \item 0 is not prime because it has a divisor other than 1 and itself, namely $0\mid0$.\\
+                  %ASK: how much to write here? can you just say because 0 is less than 1?
+                  0 is not a composite number because there does not exist such an integer x such that $1<x<0$ and $x\mid0$.
+            \item $\pi$ is not prime because $\pi$ is not an integer and prime numbers must be integers. \\
+                  $\pi$ is not a composite because there exists no integer x such that $1<x<\pi$ and $x\mid\pi$.
+            \item $\frac{1}{2}$ is not prime because $\frac{1}{2}$ is not a divisor of itself, or $\frac{1}{2}\nmid\frac{1}{2}$. \\
+                  $\frac{1}{2}$ is not a composite number because there exists no integer x such that $1<x<\frac{1}{2}$. 
+            \item -2 is not prime because -2 is not greater than 1, and therefore is not a positive integer. \\
+                  %can I write -2 is not positive instead?
+                  -2 is not a composite because there exists no integer x such that $1<x<-2$ and $x\mid-2$.
+            \item -1 is not prime because -1 is not greater than 1. -1 is not composite because there exists no integer x such that $1<x<-1$ and $x\mid-1$.
+        \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}[label=(4.\arabic*),start=1]
+    \item
+        \begin{enumerate}[(a)]
+            \item If there exists an integer $z$, an odd integer $x$, and an even integer $y$ such that $z=x \times y$, then $z$ is an even integer. %do we need to define odd/even?
+            \item If there exists an integer $y$ and an odd integer $x$ such that $y={x^2}$, then $y$ is an even integer.
+            \item If there exists an integer $y$ and a prime number $x$ such that $y={x^2}$, then $y$ is not a prime number.
+            \item If there exists an integer $z$, a negative integer $x$, and a negative integer $y$ such that $z=x\times y$, then $z$ is a negative integer.
+        \end{enumerate}
+    \addtocounter{enumi}{1}
+    \item (a) If $A$, then $B$. \\
+          (b) If $B$, then $A$. \\
+        \begin{center}
+          \begin{tabular}{c|c||c||c}
+            \textbf{A} & \textbf{B} & \textbf{A$\Rightarrow$B} & \textbf{B$\Rightarrow$A}\\
+            \hline
+            T & T & T & T \\\hline
+            T & F & F & \hspace{2mm}T* \\\hline
+            F & T & \hspace{2mm}T* & F\\\hline
+            F & F & \hspace{2mm}T* & \hspace{2mm}T* \\\hline
+            \multicolumn{4}{l}{\footnotesize * denotes vacuous truth}
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}[label=(Condition \arabic*.),start=1]
+            \item $A$ = I am in Ball Arena. \\
+                  $B$ = I am in Colorado. \\
+                  A$\Rightarrow$B and B$\nRightarrow$A.
+            \item $A$ = There are 8 continents. \\
+                  $B$ = The Andromeda Galaxy is $\thicksim$2.537 mly from Earth. \\
+                  A$\Rightarrow$B is vacuously true and B$\nRightarrow$A.
+
+        \end{enumerate}
+    \item (a) If $A$, then $B$. \\
+          (b) $\neg$$A$ or $B$. \\
+        \begin{center}
+          \begin{tabular}{c|c|c||c||c}
+            \textbf{A} & \textbf{B} & \textbf{$\neg\textbf{A}$} & \textbf{A$\Rightarrow$B} & \textbf{$\neg$A or B} \\\hline
+            T & T & F & T & T \\\hline
+            T & F & F & F & F \\\hline
+            F & T & T & \hspace{2mm}T* & T \\\hline
+            F & F & T & \hspace{2mm}T* & T \\\hline
+            \multicolumn{5}{l}{\footnotesize * denotes vacuous truth}
+          \end{tabular}
+        \end{center}
+        % Note: Can we use + for conditions?
+        Statement (a) is true when A and B, and is vacuously true when A and (B or $\neg$B). Statement (a) is false when A and $\neg$B. \\
+        \\
+        Statement (b) is true when $\neg$A and $\neg$B, and $\neg$$\neg$A and (B or $\neg$B). Statement (b) is false when $\neg$$\neg$A and $\neg$B. \\
+        \\
+        These statements are therefore equivalent in their conditions. % Is this a sufficient conclusion to the proof?
+    \item (a) If $A$, then $B$. \\
+          (b) If $\neg$$B$, then $\neg$$A$. \\
+          \begin{center}
+            \begin{tabular}{c|c|c|c||c||c}
+                \textbf{A} & \textbf{B} & \textbf{$\neg$A} & \textbf{$\neg$B} & \textbf{A$\Rightarrow$B} & \textbf{$\neg$B$\Rightarrow$$\neg$A} \\\hline
+                T & T & F & F & T & \hspace{2mm}T*              \\\hline
+                T & F & F & T & F & F                           \\\hline
+                F & T & T & F & \hspace{2mm}T* & \hspace{2mm}T* \\\hline
+                F & F & T & T & \hspace{2mm}T* & T              \\\hline
+                \multicolumn{6}{l}{\footnotesize * denotes vacuous truth}
+            \end{tabular}
+        \end{center}
+        Statement (a) is true when A and B, is vacuously true when A and (B or $\neg$B). Statement (a) is false when A and $\neg$B.\\
+        \\
+        Statement (b) is true when $\neg$A and $\neg$B, and is vacuously true when $\neg$B and ($\neg$A or $\neg$$\neg$A).\\
+        \\
+        Although these two statements differ as to when they are vacuously true, they are essentially identical in their conditions.
+\end{enumerate}
+\end{document}
