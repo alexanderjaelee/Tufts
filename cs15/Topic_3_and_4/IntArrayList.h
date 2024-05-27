@@ -7,9 +7,11 @@ class IntArrayList
 {
 public:
         IntArrayList();
+        IntArrayList(int initialSize, ElemType initialValues[]);
         ~IntArrayList();
         /* A couple more things later */
 
+        // Getter and Setter
         int size();
 
         void addAtBack(ElemType elt);
@@ -21,7 +23,9 @@ public:
         ElemType elementAt(int index);
 
 private:
-        /* Not done yet */
+        void doubleCapacity();
+        int currSize, capacity;
+        ElemType *data;
 };
 
 #endif
