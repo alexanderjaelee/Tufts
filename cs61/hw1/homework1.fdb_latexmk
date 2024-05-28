@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1716601206 "c:/Users/Alexander/Desktop/cs61/hw1/homework1.tex" "homework1.pdf" "homework1" 1716601207 0
-  "c:/Users/Alexander/Desktop/cs61/hw1/homework1.tex" 1716601206 11321 1b4635b02fa46b193e4a5b85ec1fd264 ""
+["pdflatex"] 1716855617 "c:/Users/Alexander/Desktop/Tufts/cs61/hw1/homework1.tex" "homework1.pdf" "homework1" 1716855618 0
+  "c:/Users/Alexander/Desktop/Tufts/cs61/hw1/homework1.tex" 1716855617 11340 12eb28d1357f51df7e5709c52b449fee ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1701272270 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1701271174 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1701271174 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -11,6 +11,8 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1701271174 940 228d6584342e91276bf566bcf9716b83 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1701271647 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1701271647 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1701271647 1332 f817c21a1ba54560425663374f1b651a ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1701271647 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1701271647 1288 655e228510b4c2a1abe905c368440826 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1701271647 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1701272820 520 82a3d37183f34b6eb363a161dfc002c2 ""
@@ -40,6 +42,11 @@
   "c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1701271174 13829 94730e64147574077f8ecfea9bb69af4 ""
   "c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd" 1701271174 961 6518c6525a34feb5e8250ffa91731cff ""
   "c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd" 1701271174 961 d02606146ba5601b5645f987c92e6193 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1701271177 2222 499d61426192c39efd8f410ee1a52b9c ""
+  "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty" 1701271177 4173 82ac04dfb1256038fad068287fbb4fe6 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty" 1701271177 88371 d84032c0f422c3d1e282266c01bef237 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty" 1701271177 4474 b811654f4bf125f11506d13d13647efb ""
+  "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty" 1701271177 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "c:/texlive/2023/texmf-dist/tex/latex/atveryend/atveryend.sty" 1701271259 19336 ce7ae9438967282886b3b036cfad1e4d ""
   "c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty" 1701271272 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
   "c:/texlive/2023/texmf-dist/tex/latex/base/article.cls" 1701272802 20144 fbcf51733730d8f1a62143512ff5b1fe ""
@@ -71,9 +78,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1701274761 4754669 d96ac81ce84784930de265f48f40d2ce ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1701274905 8213458 5e09237be695465e8f6c7078f40e4c4e ""
   "c:/texlive/2023/texmf.cnf" 1701274748 713 e69b156964470283e0530f5060668171 ""
-  "homework1.aux" 1716601207 162 f0fda7573680236e99560fa2ea99f7ba "pdflatex"
-  "homework1.out" 1716601207 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "homework1.tex" 1716601206 11321 1b4635b02fa46b193e4a5b85ec1fd264 ""
+  "homework1.aux" 1716855618 162 f0fda7573680236e99560fa2ea99f7ba "pdflatex"
+  "homework1.out" 1716855618 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "homework1.tex" 1716855617 11340 12eb28d1357f51df7e5709c52b449fee ""
   (generated)
   "homework1.aux"
   "homework1.log"
